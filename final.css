@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&family=Roboto+Slab:wght@800&family=Sedgwick+Ave&display=swap');
+
+
+/* General styling */
+* {
+	padding: 0;
+	margin: 0;
+}
+*
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    justify-content: center;
+}
+
+/* landing page */
+.landing {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	overflow: visible;
+}
+.cover-image {
+	width: 100%;
+	max-width: 800px;
+    height: auto;
+    border-radius: 5px;
+}
+.siteTitle {
+	font-size: 5em;
+	margin-bottom: 16px;
+}
+.ml10 {
+    font-family: 'Bangers', cursive;
+    position: relative;
+    font-weight: 400;
+    font-size: 2em;
+  }
+  
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
+.buttons {
+	margin-top: 32px;
+}
+.meetMeBtn,
+.contactBtn {
+	text-decoration: none;
+	background: #6d63fd;
+	color: white;
+	padding: 8px 25px;
+	border-radius: 5px;
+	font-weight: 400;
+	font-size: 1em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	transition: all 0.3s ease-in-out;
+	outline: 0;
+}
+.meetMeBtn:hover,
+.contactBtn:hover {
+	cursor: pointer;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+.contactBtn {
+	background: rgb(187, 187, 187);
+	color: black;
+	margin-left: 20px;
+}
+/* Smaller Desktop */
+@media (max-width: 1140px) {
+	.landing {
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 30px;
+	}
+	.landing-left {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+/* Tablet */
+@media (max-width: 600px) {
+	.siteTitle {
+		font-size: 4em;
+	}
+	.siteDescription {
+		font-size: 1.5em;
+	}
+	.meetMeBtn,
+	.contactBtn {
+		font-size: 1em;
+	}
+}
+/* Mobile */
+@media (max-width: 480px) {
+	.siteTitle {
+		font-size: 3em;
+		margin-bottom: 8px;
+	}
+	.siteDescription {
+		font-size: 1.2em;
+	}
+	.meetMeBtn,
+	.contactBtn {
+		font-size: 0.9em;
+	}
+}
+/* landing page */
+
+
+/* section 2*/
+.header {
+	font-family: 'Sedgwick Ave', cursive;    
+	display: flex;
+	margin-bottom: 40px;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	font-weight: 600;
+}
+.signin {
+	margin-top: 40px;
+	width: 50%;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25%;
+	display: none;
+	overflow: hidden;
+}
+
+/* Error */
+.error-block {
+	padding: 12px;
+	width: 100% auto;
+	background: #ffb9c5;
+	color: #721121;
+	border-radius: 3px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	display: none;
+}
+.error {
+	font-size: 1.1em;
+}
+.success {
+	background: #c1ffb9;
+	color: #16790d;
+}
+
+/* Label + Input */
+.input-block {
+	text-align: center;
+}
+.label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 1.1em;
+	text-align: left;
+}
+.input {
+	width: 100%;
+	border-radius: 3px;
+	font-size: 1.1em;
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	color: #1d1d1d;
+	margin-bottom: 24px;
+	outline: 0;
+	box-sizing: border-box;
+}
+.input-submit {
+	padding: 8px 20px;
+	border: 0;
+	font-size: 1.1em;
+	background: #258bad;
+	color: #fff;
+	border-radius: 3px;
+	outline: 0;
+	transition: 0.15s ease-in-out background;
+}
+.input-submit:hover {
+	background: #24a4cf;
+	transform: scale(1);
+	cursor: pointer;
+}
+
+.subject {
+	width: 100%;
+	height: 90px;
+	border-radius: 3px;
+	font-size: 1.1em;
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	color: #1d1d1d;
+	margin-bottom: 24px;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+
+
+/* section 2*/
+
